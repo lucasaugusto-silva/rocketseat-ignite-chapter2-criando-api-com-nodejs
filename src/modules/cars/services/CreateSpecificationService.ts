@@ -1,6 +1,17 @@
+import { ISpecificationRepository } from "../repositories/ISpecificationRepository"
+
+interface IRequest {
+    name: string;
+    description: string;
+}
+
 class CreateSpecificationService {
-    execute() {
-        console.log('Todo')
+    constructor(private specificationsRepository: ISpecificationRepository) { }
+    execute({ name, description }: IRequest): void {
+        this.specificationsRepository.create({
+            name,
+            description
+        })
     }
 }
 
