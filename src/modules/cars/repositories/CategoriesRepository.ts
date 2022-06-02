@@ -7,6 +7,7 @@ class CategoriesRepository implements ICategoriesRepository {
     constructor() {
         this.categories = [];
     }
+
     create({ name, description }: ICreateCategoryDTO): void {
         const category = new Category();
         Object.assign(category, {
@@ -20,7 +21,7 @@ class CategoriesRepository implements ICategoriesRepository {
         return this.categories
     }
     findByName(name: string): Category {
-        const category = this.categories.find(category => category.name === name)
+        const category = this.categories.find((category) => { return category.name === name })
         return category;
     }
 }
