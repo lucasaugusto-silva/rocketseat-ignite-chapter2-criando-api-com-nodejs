@@ -16,15 +16,15 @@ class SpecificationsRepository implements ISpecificationsRepository {
             description,
             created_at: new Date(),
         });
-        this.specifications.push(specification)
+        this.specifications.push(specification);
     }
     findByName(name: string): Specification {
         const specification = this.specifications.find(
-            (specification) => { return specification.name === name }
+            (specification) => { return specification.name === name; }
         );
         return specification;
     }
 
 }
 
-export { SpecificationsRepository }
+export { SpecificationsRepository };
