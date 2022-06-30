@@ -1,20 +1,20 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\berez\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+  C:\Program Files\nodejs\node.exe C:\Users\lucas\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add tsyringe
 
 PATH: 
-  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\berez\AppData\Local\Microsoft\WindowsApps;;C:\Users\berez\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\berez\AppData\Roaming\npm
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;"C:\Program Files\MongoDB\Server\5.0\bin;";C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\14\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PowerShell\7\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jre1.8.0_301\bin;C:\Users\lucas\AppData\Local\Android\Sdk\platform-tools;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\lucas\AppData\Local\Programs\mongosh\;C:\Users\lucas\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\lucas\AppData\Local\GitHubDesktop\bin
 
 Yarn version: 
-  1.22.19
+  1.22.17
 
 Node version: 
-  16.15.1
+  16.14.2
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\berez\OneDrive\Área de Trabalho\rocketseat\rocketseat-ignite-chapter2-criando-api-com-nodejs\node_modules\.bin\ts-node-dev'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\lucas\Desktop\Rocketseat\rocketseat-ignite-chapter2-criando-api-com-nodejs\node_modules\.bin\ts-node-dev'
 
 npm manifest: 
   {
@@ -25,7 +25,8 @@ npm manifest:
       "author": "Lucas Silva <58057135+lucasaugusto-silva@users.noreply.github.com>",
       "license": "MIT",
       "scripts": {
-          "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+          "dev": "ts-node-dev --poll --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+          "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
       },
       "dependencies": {
           "@types/csv-parse": "^1.2.2",
