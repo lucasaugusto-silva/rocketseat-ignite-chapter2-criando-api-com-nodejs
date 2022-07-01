@@ -9,4 +9,4 @@ router.use("/categories", categoriesRoutes);
 router.use("/specifications", specificationRoutes);
 router.use("/users", usersRoutes);
 
-export { router };
+export { router }; 
