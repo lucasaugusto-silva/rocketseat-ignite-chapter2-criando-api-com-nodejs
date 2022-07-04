@@ -6,7 +6,7 @@ import { IUsersRepository } from "../../repositories/IUsersRepository";
 import AppError from "../../../../errors/AppError";
 
 @injectable()
-class CreateUserUserCase {
+class CreateUserUseCase {
     constructor(
         @inject("UsersRepository")
         private usersRepository: IUsersRepository
@@ -27,4 +27,4 @@ class CreateUserUserCase {
     };
 }
 
-export { CreateUserUserCase };
+export { CreateUserUseCase };
